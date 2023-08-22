@@ -1,50 +1,34 @@
 import FoodTypes from '../../models/FoodTypes'
 import RestaurantsList from '../../components/RestaurantList'
+import italian from '../../assets/images/italy.png'
+import japa from '../../assets/images/sushi.png'
 
 const promo: FoodTypes[] = [
   {
     id: 1,
-    title: 'Resident Evil 4',
-    category: 'Ação',
-    system: 'PS5',
+    title: 'Hioki Sushi ',
+    category: 'Japonês',
+    system: '4,9',
     description:
-      'Resident Evil 4, conhecido no Japão como Biohazard 4, é um jogo eletrônico de survival horror...',
+      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
     infos: ['10%', 'R$ 250,00'],
-    image: ''
+    image: italian
   },
   {
     id: 2,
-    title: 'Resident Evil 4',
-    category: 'Ação',
-    system: 'PS5',
+    title: 'La Dolce Vita Trattoria',
+    category: 'Italiana',
+    system: '4,8',
     description:
-      'Resident Evil 4, conhecido no Japão como Biohazard 4, é um jogo eletrônico de survival horror...',
+      'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
     infos: ['10%', 'R$ 250,00'],
-    image: ''
-  },
-  {
-    id: 3,
-    title: 'FIFA 23',
-    category: 'Esporte',
-    system: 'PS5',
-    description:
-      'EA SPORTS™ FIFA 23 traz o Jogo de Todo Mundo aos gramados com a tecnologia HyperMotion2...',
-    infos: ['5%', 'R$ 290,00'],
-    image: ''
-  },
-  {
-    id: 4,
-    title: 'Resident Evil 4',
-    category: 'Ação',
-    system: 'PS5',
-    description:
-      'Resident Evil 4, conhecido no Japão como Biohazard 4, é um jogo eletrônico de survival horror...',
-    infos: ['10%', 'R$ 250,00'],
-    image: ''
+    image: japa
   }
 ]
 const Home = () => (
   <>
+    <RestaurantsList types={promo} title='' />
+    <RestaurantsList types={promo} title='' />
     <RestaurantsList types={promo} title='' />
   </>
 )

@@ -1,30 +1,33 @@
 import FoodTypes from '../../models/FoodTypes'
 import Restaurant from '../Restaurant'
-import { Container, List, Title } from './styles'
+import { Title } from '../Restaurant/styles'
+import { List } from './styles'
 
 export type Props = {
   title: string
   types: FoodTypes[]
 }
-const RestaurantsList = ({ title, games }: Props) => (
-  <Container>
+const RestaurantsList = ({ title, types }: Props) => (
+  <>
     <div className="container">
+      <div>
       <Title>{title}</Title>
       <List>
-        {games.map((game) => (
+        {types.map((type) => (
           <Restaurant
-            key={game.id}
-            title={game.title}
-            category={game.category}
-            system={game.system}
-            description={game.description}
-            infos={game.infos}
-            image={game.image}
+            key={type.id}
+            title={type.title}
+            category={type.category}
+            system={type.system}
+            description={type.description}
+            infos={type.infos}
+            image={type.image}
           />
         ))}
       </List>
+      </div>
     </div>
-  </Container>
+  </>
 )
 
 export default RestaurantsList

@@ -1,5 +1,6 @@
+import Button from '../Button'
 import Tag from '../Tag'
-import { Card, Description, Infos, Title } from './styles'
+import { BottomCard, Card, Description, Infos, Title } from './styles'
 
 type Props = {
   title: string
@@ -10,7 +11,7 @@ type Props = {
   image: string
 }
 
-const Restaurant = () => ({
+const Restaurant = ({
   title,
   category,
   system,
@@ -25,11 +26,15 @@ const Restaurant = () => ({
         <Tag key={info}>{info}</Tag>
       ))}
     </Infos>
-    <Title>{title}</Title>
-    <Tag>{category}</Tag>
-    <Tag>{system}</Tag>
-    <Description>{description}</Description>
+    <BottomCard>
+      <Title>{title}</Title>
+      <Tag>{category}</Tag>
+      <Tag>{system}</Tag>
+      <Description>{description}</Description>
+      <Button />
+    </BottomCard>
+
   </Card>
-)
+);
 
 export default Restaurant

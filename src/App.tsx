@@ -1,16 +1,15 @@
 import { Container, GlobalStyle } from './styles'
 import Header from './components/Header'
-import Rotas from './routs'
-import { BrowserRouter } from 'react-router-dom'
+import Home from './pages/Home'
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <GlobalStyle />
       <Header />
       <Container>
-        <Rotas />
+        <Home />
       </Container>
-    </BrowserRouter>
+    </>
   )
 }
 
