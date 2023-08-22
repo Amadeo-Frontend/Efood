@@ -16,6 +16,9 @@ export const Card = styled.div`
 
 export const BottomCard = styled.div`
   padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 `
 
 export const Title = styled.h3`
