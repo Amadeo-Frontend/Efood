@@ -7,8 +7,9 @@ export const Card = styled.div`
   border: solid 1px ${colors.red};
 
   img {
-    width: 100%;
-    max-width: 100%;
+    top: 0px;
+    left: 0px;
+    width: 472px;
     height: 217px;
     object-fit: cover;
   }
@@ -28,14 +29,32 @@ export const Title = styled.h3`
   margin-top: 8px;
   display: block;
 `
+export const CardHeader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 21px;
+    height: 21px;
+    margin-left: 8px;
+  }
+`
 export const Description = styled.p`
   font-size: 14px;
   line-height: 22px;
   display: block;
   margin-top: 16px;
+  margin-bottom: 16px;
 `
 export const Infos = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
+`
+export const Score = styled.p`
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  align-items: center;
+
 `

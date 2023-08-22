@@ -6,7 +6,8 @@ class Foods {
     description: string
     infos: string[]
     image: string
-  
+    star: string
+
     constructor(
       id: number,
       title: string,
@@ -14,7 +15,8 @@ class Foods {
       system: string,
       description: string,
       infos: string[],
-      image: string
+      image: string,
+      star: string
     ) {
       this.id = id
       this.title = title
@@ -23,7 +25,8 @@ class Foods {
       this.description = description
       this.infos = infos
       this.image = image
+      this.star = star
     }
   }
-  
+
   export default Foods

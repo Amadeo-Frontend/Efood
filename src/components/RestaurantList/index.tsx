@@ -1,7 +1,7 @@
 import FoodTypes from '../../models/FoodTypes'
 import Restaurant from '../Restaurant'
 import { Title } from '../Restaurant/styles'
-import { List } from './styles'
+import { List, ListContainer } from './styles'
 
 export type Props = {
   title: string
@@ -10,7 +10,7 @@ export type Props = {
 const RestaurantsList = ({ title, types }: Props) => (
   <>
     <div className="container">
-      <div>
+      <ListContainer>
       <Title>{title}</Title>
       <List>
         {types.map((type) => (
@@ -22,10 +22,11 @@ const RestaurantsList = ({ title, types }: Props) => (
             description={type.description}
             infos={type.infos}
             image={type.image}
+            star={type.star}
           />
         ))}
       </List>
-      </div>
+      </ListContainer>
     </div>
   </>
 )

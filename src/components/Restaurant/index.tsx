@@ -1,6 +1,7 @@
 import Button from '../Button'
 import Tag from '../Tag'
-import { BottomCard, Card, Description, Infos, Title } from './styles'
+import { BottomCard, Card, CardHeader, Description, Infos, Score, Title } from './styles'
+import star from '../../assets/images/estrela.svg'
 
 type Props = {
   title: string
@@ -9,6 +10,7 @@ type Props = {
   description: string
   infos: string[]
   image: string
+  star: string
 }
 
 const Restaurant = ({
@@ -16,20 +18,19 @@ const Restaurant = ({
   category,
   system,
   description,
-  infos,
   image
 }: Props) => (
   <Card>
     <img src={image} alt={title} />
     <Infos>
-      {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
-      ))}
+    <Tag>{category}</Tag>
     </Infos>
     <BottomCard>
-      <Title>{title}</Title>
-      <Tag>{category}</Tag>
-      <Tag>{system}</Tag>
+      <CardHeader>
+        <Title>{title}</Title>
+        <Score>{system}</Score>
+        <img src={star} alt="" />
+      </CardHeader>
       <Description>{description}</Description>
       <Button />
     </BottomCard>
