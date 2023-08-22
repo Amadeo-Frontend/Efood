@@ -18,7 +18,7 @@ const RestaurantsList = ({ title, types }: Props) => (
             key={type.id}
             title={type.title}
             category={type.category}
-            system={type.system}
+            score={type.score}
             description={type.description}
             infos={type.infos}
             image={type.image}

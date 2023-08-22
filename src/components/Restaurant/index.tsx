@@ -6,7 +6,7 @@ import star from '../../assets/images/estrela.svg'
 type Props = {
   title: string
   category: string
-  system: string
+  score: string
   description: string
   infos: string
   image: string
@@ -16,7 +16,7 @@ type Props = {
 const Restaurant = ({
   title,
   category,
-  system,
+  score,
   description,
   infos,
   image
@@ -30,7 +30,7 @@ const Restaurant = ({
     <BottomCard>
       <CardHeader>
         <Title>{title}</Title>
-        <Score>{system}</Score>
+        <Score>{score}</Score>
         <img src={star} alt="" />
       </CardHeader>
       <Description>{description}</Description>

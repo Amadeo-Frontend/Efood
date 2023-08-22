@@ -2,7 +2,7 @@ class Foods {
     id: number
     title: string
     category: string
-    system: string
+    score: string
     description: string
     infos: string
     image: string
@@ -12,7 +12,7 @@ class Foods {
       id: number,
       title: string,
       category: string,
-      system: string,
+      score: string,
       description: string,
       infos: string,
       image: string,
@@ -21,7 +21,7 @@ class Foods {
       this.id = id
       this.title = title
       this.category = category
-      this.system = system
+      this.score = system
       this.description = description
       this.infos = infos
       this.image = image
