@@ -33,6 +33,7 @@ export const CardHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   img {
     width: 21px;
     height: 21px;

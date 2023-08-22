@@ -4,7 +4,7 @@ class Foods {
     category: string
     system: string
     description: string
-    infos: string[]
+    infos: string
     image: string
     star: string
 
@@ -14,7 +14,7 @@ class Foods {
       category: string,
       system: string,
       description: string,
-      infos: string[],
+      infos: string,
       image: string,
       star: string
     ) {

@@ -8,7 +8,7 @@ type Props = {
   category: string
   system: string
   description: string
-  infos: string[]
+  infos: string
   image: string
   star: string
 }
@@ -18,11 +18,13 @@ const Restaurant = ({
   category,
   system,
   description,
+  infos,
   image
 }: Props) => (
   <Card>
     <img src={image} alt={title} />
     <Infos>
+    <Tag>{infos}</Tag>
     <Tag>{category}</Tag>
     </Infos>
     <BottomCard>
