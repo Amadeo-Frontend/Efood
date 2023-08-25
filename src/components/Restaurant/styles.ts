@@ -33,11 +33,12 @@ export const CardHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
-  img {
-    width: 21px;
-    height: 21px;
-    margin-left: 8px;
+  h3 {
+    width: 70%;
+    margin-top: 0;
+    white-space: nowrap;
   }
 `
 export const Description = styled.p`
@@ -49,6 +50,8 @@ export const Description = styled.p`
 `
 export const Infos = styled.div`
   position: absolute;
+  display: flex;
+  gap: 4px;
   top: 16px;
   right: 16px;
 `
@@ -57,5 +60,16 @@ export const Score = styled.p`
   font-weight: 700;
   line-height: 21px;
   align-items: center;
+`
+export const Rating = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+  width: 100%;
 
+  img {
+    width: 21px;
+    height: 21px;
+  }
 `
