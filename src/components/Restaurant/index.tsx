@@ -6,7 +6,6 @@ import star from '../../assets/images/estrela.svg'
 type Props = {
   title: string
   category: string
-  score: string
   description: string
   infos: string
   image: string

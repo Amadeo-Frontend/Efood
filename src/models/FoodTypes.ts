@@ -21,7 +21,7 @@ class Foods {
       this.id = id
       this.title = title
       this.category = category
-      this.score = system
+      this.score = score
       this.description = description
       this.infos = infos
       this.image = image
