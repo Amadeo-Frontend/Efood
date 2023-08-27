@@ -3,6 +3,9 @@ import RestaurantsList from '../../components/RestaurantList'
 import italian from '../../assets/images/italy.png'
 import japa from '../../assets/images/sushi.png'
 import star from '../../assets/images/estrela.svg'
+import Header from '../../components/Header'
+import { Container } from '../../styles'
+import Footer from '../../components/Footer'
 
 const promo: FoodTypes[] = [
   {
@@ -74,7 +77,11 @@ const promo: FoodTypes[] = [
 ]
 const Home = () => (
   <>
-    <RestaurantsList types={promo} title='' />
+    <Header />
+    <Container>
+      <RestaurantsList types={promo} title='' />
+    </Container>
+    <Footer />
   </>
 )
 

@@ -22,6 +22,12 @@ export const GlobalStyle = createGlobalStyle`
       background: ${colors.white_bg};
       color: ${colors.red};
  }
+
+ .container {
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+}
  `
 
 export const Container = styled.div`

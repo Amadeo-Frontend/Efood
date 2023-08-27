@@ -4,10 +4,12 @@ import Vector from '../../assets/images/Vector.svg'
 export const HeaderLayout = styled.header`
   top: -24px;
   background-image: url(${Vector});
+  max-width: 2032px;
   width: 100%;
   height: 384px;
-  background-color: #E667670D ;  
+  background-color: #E667670D ;
   overflow-y: hidden;
+
   img {
     margin-top: 64px;
   }

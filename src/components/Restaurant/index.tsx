@@ -1,7 +1,7 @@
-import Button from '../Button'
 import Tag from '../Tag'
 import { BottomCard, Card, CardHeader, Description, Infos, Rating, Score, Title } from './styles'
 import star from '../../assets/images/estrela.svg'
+import { ButtonLink } from '../Button/styles'
 
 type Props = {
   title: string
@@ -36,7 +36,7 @@ const Restaurant = ({
         </Rating>
       </CardHeader>
       <Description>{description}</Description>
-      <Button />
+      <ButtonLink  to="/product" type={'button'} title={'Conheça nosso cardápio'} children={'Saiba mais'} />
     </BottomCard>
   </Card>
 );
